@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import FunctionalHello from './component/FunctionalHello';
+import FunctionalParent from './component/FunctionalParent';
+import Hello from './component/Hello';
+import ParentOperator from './component/ParentOperator';
 
-function App() {
+const App=()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hello name='print kamal using class component' />
+      <FunctionalHello name='print kamal using functional'/>
+      <ParentOperator />
+      <FunctionalParent />
     </div>
   );
 }
-
 export default App;
